@@ -1,0 +1,95 @@
+/* Limpando formatações padrão*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 1em;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #e6e6e6;
+}
+
+/* 
+**** Layout ****
+*/
+#area-cabecalho{
+	margin: 0 auto;
+	height: 50%;
+	width: 60%;
+	background-color: white;
+	padding: 15px;
+	text-align: center;
+}
+
+#area-logo, #area-menu{
+	padding: 10px;
+}
+
+#area-principal{
+	width: 1200px;
+	margin: 0 auto;
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+
+#area-conteudo{
+	width: 840px;
+	background: #6C7A89;
+
+}
+
+
+.conteudo{
+	padding: 20px;
+	margin-bottom: 20px;
+	background: white;
+
+}
+#rodape{
+	clear: both;
+	text-align: center;
+	padding: 15px;
+	background: #CCC; 
+}
+/* 
+**** Formatações do menu ****
+*/
+a{
+	text-decoration: none;
+}
+a:link,a:visited{
+	color: #f7b600;
+}
+a:hover{
+	text-decoration: underline;
+}
+/* Links apenas do cabeçalho*/
+#area-cabecalho a:link,#area-cabecalho a:visited{
+	color: #FFF;
+	padding: 8px 12px;
+}
+#area-cabecalho a:hover{
+	color: #f7b600;
+	background: #FFF;
+	text-decoration: none;
+}
+/* 
+**** Formatações gerais ****
+*/
+h1 {
+	color: #4e4e4e;	
+	font-size: 2.5em;
+}
+
+h2{
+	color: #f7b600;
+}
+
+
+
+.sumario {
+	text-align: justify;
+	color: white;
+}
