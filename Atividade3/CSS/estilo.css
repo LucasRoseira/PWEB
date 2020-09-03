@@ -65,16 +65,7 @@ a:link,a:visited{
 a:hover{
 	text-decoration: underline;
 }
-/* Links apenas do cabeçalho*/
-#area-cabecalho a:link,#area-cabecalho a:visited{
-	color: #FFF;
-	padding: 8px 12px;
-}
-#area-cabecalho a:hover{
-	color: #f7b600;
-	background: #FFF;
-	text-decoration: none;
-}
+
 /* 
 **** Formatações gerais ****
 */
