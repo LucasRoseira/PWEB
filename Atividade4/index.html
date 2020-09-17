@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zoológico Municpal de Sorocaba</title>
+	<meta charset="utf-8">
+
+	<!-- Normalize CSS -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+	<!-- Estilo customizado -->
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<div id="container"><!-- Início container -->
+		
+		<header><!-- Início header -->
+			<div id="logo">
+				<h1><a href="">Zoológico Municpal de Sorocaba</a></h1>
+			</div>
+
+			<nav><!-- Início nav -->
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Exposições</a></li>
+					<li><a href="#">Pesquisa</a></li>
+					<li><a href="#">vídeos</a></li>
+					<li><a href="#">fotos</a></li>
+					<li><a href="#">contato</a></li>
+				</ul>
+			</nav><!--/fim nav -->
+
+		</header><!--/fim header -->
+
+		<div id="principal"><!-- Início principal -->
+			
+			<div id="conteudo"><!-- Início conteudo -->
+				<section id="capa">
+					<img src="imagens/zoologico.jpg">
+				</section>
+
+				<section id="postegens">
+					<article id="video">
+						<h3>Vídeo: Conheça Zoológico</h3>
+						<iframe width="310" height="170" src="https://www.youtube.com/embed/fglG1SkOAQ8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</article>
+
+					<article id="mapa">
+						<h3>Mapa: Encontre o Zoológico</h3>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.755310555815!2d-47.43950508502329!3d-23.50532138471068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf6036881cae3b%3A0x9c2a545f8dd05260!2sParque%20Zool%C3%B3gico%20Municipal%20Quinzinho%20de%20Barros!5e0!3m2!1spt-BR!2sbr!4v1600300341209!5m2!1spt-BR!2sbr" width="310" height="170" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					</article>
+
+					<article id="exposicoes">
+						<h3>Exposições</h3>
+						<ul>
+							<li>
+								<a href="#">Exposições no Museu de Zoologia</a>
+							</li>
+
+						</ul>
+					</article>
+
+					<article id="historia">
+						<h3>52 anos de História</h3>
+						<p>Atualmente considerado um dos mais completos da América Latina, já em 1993 foi escolhido, por votação popular, como símbolo de Sorocaba. Destaca-se por seus objetivos que se apóiam em oferecer recreação saudável e contato com a natureza, programas de educação ambiental, colaboração com pesquisas, gerando conhecimento sobre comportamento, reprodução e fisiologia, e atuando junto ao esforço conservacionista nacional e mundial através de planos de manejo, tanto em cativeiro como na natureza.
+						Os animais da fauna nacional (70%) são o ponto forte do Zoológico, com especial destaque para aqueles ameaçados de extinção.
+
+						</p>
+						<a href=""><strong>Leia Mais</strong></a>
+					</article>
+				</section>
+			</div><!--/fim conteudo -->
+
+			<aside><!-- Início aside -->
+				<section id="breveHistorico">
+					<img src="imagens/breveHistorico.png" width="350" height="300">
+				</section>
+
+				<section id="visita"><!-- Início seção visita -->
+					<h4>Faça uma visita</h4>
+					<form>
+						<fieldset>
+							<legend>Selecione uma data</legend>
+							
+							<label for="data">Data</label>
+							<input class="campo" type="text" id="data" value="dd/mm/aaaa">
+
+							<label for="qtd">Qtd pessoas</label>
+							<input class="campo" style="width: 30px;" type="text" id="qtd" value="1">
+
+						</fieldset>
+
+						<input class="botao" type="submit" value="Verificar disponibilidade">
+
+					</form>
+				</section><!--/fim seção visita -->
+
+				<section id="galeria">
+					<h4>Galeria de fotos</h4>
+					
+					<a href="">
+						<img src="imagens/imagem1.jpg" height="93" width="93" alt="Descricao imagem">
+					</a>
+
+					<a href="">
+						<img src="imagens/imagem2.jpg" height="93" width="93">
+					</a>
+
+					<a href="">
+						<img src="imagens/imagem3.jpg" height="93" width="93">
+					</a>
+
+					<a href="">
+						<img src="imagens/imagem4.jpg" height="93" width="93">
+					</a>
+
+				</section>
+
+			</aside><!--/fim aside -->
+			<footer>
+				<p>
+					<a href="">Home</a>
+					<a href="">Exposiçoes</a>
+					<a href="">Pesquisa</a>
+					<a href="">Vídeos</a>
+					<a href="">Fotos</a>
+					<a href="">Contato</a>
+				</p>
+				<p>2020 <a href="">Zoológico Municipal de Sorocaba</a> - Todos os direitos reservados</p> 
+			</footer>
+		</div><!--/fim principal -->
+
+	</div><!--/fim container -->
+
+</body>
+</html>
