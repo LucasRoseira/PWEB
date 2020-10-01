@@ -6,28 +6,39 @@ function Enviar() {
 
 	var idade = document.getElementById("idade");
 	var sexo = document.getElementById("sexo");
-	var opiniao = document.getElementById("opiniao");
+	var opiniao = document.querySelector('input[name=opniao]:checked')
 	var maiorIdade;
 	var menorIdade;
 	var media;
 	var qtdPessimo;
-	var porcentagemPessimoBom;
+	var porcentagemOtimoBom;
+	var qtdMulheres;
+	var qtdHomens;
 	var i;
 
 	quantidade++;
 	totalIdades += idade.value;
 
-	if(opiniao.value == "pessimo") {
+	if(opiniao == "pessimo") {
 		qtdPessimo++;
+	} else {
+		porcentagemOtimoBom++;
 	}
 
-	alert('Total Idades: ' + totalIdades);
+
+	if(sexo == "masculino") {
+		qtdHomens++;
+	} else {
+		qtdMulheres++;
+	}
+
 
 	arrayIdade.push(idade.value);
 	alert('Pesquisa enviada com sucesso!');
 
 
 	if(quantidade == 3) {
+		porcentagemOtimoBom /= quantidade;
 
 		maiorIdade = Math.max.apply(null, arrayIdade);
 		alert('Maior idade: ' + maiorIdade);
@@ -39,6 +50,12 @@ function Enviar() {
 		alert('Media Idades: ' + media);
 
 		alert('Quantidade de Péssimo: ' + qtdPessimo);
+
+		alert('Porcentagem ótimo e bom: ' + porcentagemOtimoBom) + '%';
+
+		alert('Quantidade de Homens: ' + qtdHomens);
+
+		alert('Quantidade de Mulheres: ' + qtdMulheres);
 
 		window.reload();
 
