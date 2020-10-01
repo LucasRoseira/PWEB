@@ -26,7 +26,6 @@ function Enviar() {
 		qtdOtimoBom++;
 	}
 
-
 	if(sexo.value == "masculino") {
 		qtdHomens++;
 	} else {
@@ -37,27 +36,23 @@ function Enviar() {
 	arrayIdade.push(idade.value);
 	alert('Pesquisa enviada com sucesso!');
 
-
+	//QUANTIDADE PEQUENA PARA TESTE, ATIVIDADE PEDE COM 45
 	if(quantidade == 3) {
 		porcentagemOtimoBom = qtdOtimoBom / quantidade * 100;
 
 		maiorIdade = Math.max.apply(null, arrayIdade);
-		alert('Maior idade: ' + maiorIdade);
 
 		menorIdade = Math.min.apply(null, arrayIdade);
-		alert('Menor idade: ' + menorIdade);
 
 		media = Math.round(totalIdades / 3);
 
-		alert('Media Idades: ' + media);
-
-		alert('Quantidade de Péssimo: ' + qtdPessimo);
-
-		alert('Porcentagem ótimo e bom: ' + porcentagemOtimoBom.toFixed(2) + '%');
-
-		alert('Quantidade de Homens: ' + qtdHomens);
-
-		alert('Quantidade de Mulheres: ' + qtdMulheres);
+		alert('Maior idade: ' + maiorIdade + 
+		'\nMenor idade: ' + menorIdade +
+		'\nMedia Idades: ' + media +
+		'\nQuantidade de Péssimo: ' + qtdPessimo +
+		'\nPorcentagem ótimo e bom: ' + porcentagemOtimoBom.toFixed(2) + '%' +
+		'\nQuantidade de Homens: ' + qtdHomens +
+		'\nQuantidade de Mulheres: ' + qtdMulheres);
 
 		window.location.reload();
 	}
