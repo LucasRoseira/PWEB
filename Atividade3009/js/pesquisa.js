@@ -1,32 +1,33 @@
 var quantidade = 0;
 var arrayIdade = [];
 var totalIdades = 0;
+var qtdPessimo = 0;
+var qtdOtimoBom = 0;
+var qtdMulheres = 0;
+var qtdHomens = 0;
+var porcentagemOtimoBom = 0;
 
 function Enviar() {
 
 	var idade = document.getElementById("idade");
-	var sexo = document.getElementById("sexo");
-	var opiniao = document.querySelector('input[name=opniao]:checked')
+	var sexo = document.querySelector("#sexo");
+	var opiniao = document.querySelector('input[name=opiniao]:checked')
 	var maiorIdade;
 	var menorIdade;
 	var media;
-	var qtdPessimo;
-	var porcentagemOtimoBom;
-	var qtdMulheres;
-	var qtdHomens;
 	var i;
 
 	quantidade++;
-	totalIdades += idade.value;
+	totalIdades += Number(idade.value);
 
-	if(opiniao == "pessimo") {
+	if(opiniao.value == "pessimo") {
 		qtdPessimo++;
 	} else {
-		porcentagemOtimoBom++;
+		qtdOtimoBom++;
 	}
 
 
-	if(sexo == "masculino") {
+	if(sexo.value == "masculino") {
 		qtdHomens++;
 	} else {
 		qtdMulheres++;
@@ -38,7 +39,7 @@ function Enviar() {
 
 
 	if(quantidade == 3) {
-		porcentagemOtimoBom /= quantidade;
+		porcentagemOtimoBom = qtdOtimoBom / quantidade * 100;
 
 		maiorIdade = Math.max.apply(null, arrayIdade);
 		alert('Maior idade: ' + maiorIdade);
@@ -47,18 +48,18 @@ function Enviar() {
 		alert('Menor idade: ' + menorIdade);
 
 		media = Math.round(totalIdades / 3);
+
 		alert('Media Idades: ' + media);
 
 		alert('Quantidade de Péssimo: ' + qtdPessimo);
 
-		alert('Porcentagem ótimo e bom: ' + porcentagemOtimoBom) + '%';
+		alert('Porcentagem ótimo e bom: ' + porcentagemOtimoBom.toFixed(2) + '%');
 
 		alert('Quantidade de Homens: ' + qtdHomens);
 
 		alert('Quantidade de Mulheres: ' + qtdMulheres);
 
-		window.reload();
-
+		window.location.reload();
 	}
 
 }
