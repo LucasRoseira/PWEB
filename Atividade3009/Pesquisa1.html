@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Atividade 6 - Pesquisa</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+	<script src="js/pesquisa.js"></script>
+	<form>
+		<div>
+			<h2>Pesquisa da Palestra</h2>
+
+
+			<div class="form-group">
+				<label for="exampleFormControlSelect1">Idade</label>
+				<br>
+				<input type="text" name="idade" id="idade">
+			</div>
+
+			<label for="exampleFormControlSelect1">Sexo</label>
+			<select class="form-control" id="sexo">
+				<option>Masculino</option>
+				<option>Feminino</option>
+
+			</select>
+
+			<div class="form-group">
+				<label for="formGroupExampleInput">Opinião</label>
+				<br>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" id="inlineCheckbox1" value="opcao1" id="opiniao">
+					<label class="form-check-label" for="inlineCheckbox1">Ótimo</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" id="inlineCheckbox2" value="opcao2" id="opiniao">
+					<label class="form-check-label" for="inlineCheckbox2">Bom</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" id="inlineCheckbox3" value="opcao3" id="opiniao">
+					<label class="form-check-label" for="inlineCheckbox3">Regular</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" id="inlineCheckbox3" value="opcao3" id="opiniao">
+					<label class="form-check-label" for="inlineCheckbox3">Péssimo</label>
+				</div>
+			</div>
+			<button type="submit" class="btn btn-danger"  onclick="Enviar();">Enviar</button>
+		</div>
+
+	</form>
+</body>
+</html>
