@@ -13,18 +13,17 @@ function Jokenpo() {
             return "Tesoura";
         }
     }();
-
     alert("Escolha do computador: " + computerChoice.toLowerCase());
 
     computerChoice = computerChoice.toLowerCase();
     alert(function(){
-        if((userChoice == "papel" && computerChoice == "pedra") ||
-            (userChoice == "tesoura" && computerChoice == "papel")||   
-            (userChoice == "pedra" && computerChoice == "tesoura")){
+        if((userChoice.value == "papel" && computerChoice == "pedra") ||
+            (userChoice.value == "tesoura" && computerChoice == "papel")||   
+            (userChoice.value == "pedra" && computerChoice == "tesoura")){
             return "Você venceu ;)";
-    }else if((userChoice == "pedra" && computerChoice == "papel")||
-        (userChoice == "papel" && computerChoice == "tesoura")||
-        (userChoice == "tesoura" && computerChoice == "pedra")){
+    }else if((userChoice.value == "pedra" && computerChoice == "papel")||
+        (userChoice.value == "papel" && computerChoice == "tesoura")||
+        (userChoice.value == "tesoura" && computerChoice == "pedra")){
         return "Você perdeu :(";
     }else{
         return "Empataram :|";
