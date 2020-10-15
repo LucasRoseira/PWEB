@@ -22,6 +22,8 @@ function Enviar() {
 
 	if(opiniao.value == "pessimo") {
 		qtdPessimo++;
+	} if(opiniao.value == "regular"){
+		
 	} else {
 		qtdOtimoBom++;
 	}
