@@ -20,9 +20,12 @@
                 <h2>Jokenpo</h2>
                 <div>
                     <label for="exampleFormControlSelect1">Sua Escolha: Pedra, Papel ou Tesoura</label>
-                    <br>
-                    <input type="text" name="escolha" id="escolha">
-                </div>
+                    <select id="escolha" class="form-control">
+                        <option value="pedra">Pedra</option>
+                        <option value="papel">Papel</option>
+                        <option value="tesoura">Tesoura</option>
+                    </select>
+                </div> 
 
                 <button type="button" class="btn btn-success" onclick="Jokenpo();">Enviar</button>
             </div>

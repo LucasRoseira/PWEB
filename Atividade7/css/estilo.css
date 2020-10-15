@@ -27,7 +27,7 @@ input{
 input:hover,input:focus {
 	border-color: #000066;
 	box-shadow: 5px 0px 9px #FFFF00;
-	background-color:#808080;
+	background-color:#ffa500;
 	color: black;
 	font-weight: bold;
 

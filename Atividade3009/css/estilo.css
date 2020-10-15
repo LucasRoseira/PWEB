@@ -8,7 +8,7 @@ form {
     font-family: Verdana,Tahoma,sans-serif;
     font-size: 15px;
     background-color: #192150;
-    max-width: 1000px;
+    max-width: 400px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -23,7 +23,7 @@ h2 {
 }
 
 input, select{
-    width: 100px;
+    width: 150px;
     padding: 10px;
     color: black;
     margin-left: 20px;
@@ -33,7 +33,7 @@ input, select{
     border: 1px solid;
 }
 
-input:hover,input:focus {
+input:hover,input:focus, select {
     border-color: #000066;
     box-shadow: 5px 0px 9px #FFFF00;
     background-color: #66FFFF;
@@ -49,6 +49,6 @@ form label {
 }
 
 div>button {
-    margin-left: 300px;
+    margin-left: 150px;
     color: red;
 }
