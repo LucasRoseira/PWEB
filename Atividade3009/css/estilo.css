@@ -22,7 +22,7 @@ h2 {
     color: #818181;
 }
 
-input{
+input, select{
     width: 100px;
     padding: 10px;
     color: black;
